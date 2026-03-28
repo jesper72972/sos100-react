@@ -5,7 +5,7 @@ function App() {
   const [Formaner, setFormaner] = useState([])
 
   function FetchFormaner() {
-    fetch('http://localhost:5028/Formaner')
+    fetch('https://app-sos100-formaner.azurewebsites.net/Formaner')
     .then((response) => response.json())
     .then((data) =>setFormaner(data))
   }
@@ -24,12 +24,13 @@ function App() {
         <div>
           {Formaner.map((item, index) => (
             <div key = {index}>
-              <h1>{item.title}</h1>
-              <h2>{item.categorie}</h2>
-              <p>{item.description}</p>
+              <h1 id="titel">{item.title}</h1>
+              <p class="formanerna" id="categorie">{item.categorie} <br></br> {item.description}</p>   
+            
               </div>
           ))}
         </div>
+       
        
 
 
@@ -41,4 +42,3 @@ function App() {
   )
 }
 
-export default App
