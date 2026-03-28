@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+#titel {
+  text-align: center;
+  font-size: 25px;
+  font-weight : 700;
+}
+
+.formanerna {
+  color: black;
+  font-weight: 700;
+  font-size: large;
+  border-radius: 25px;
+  text-align: center;
+  border: black solid 1px;
+  padding : 10px;
+  background-color: rgb(240, 240, 240);   
+}
